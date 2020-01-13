@@ -10,6 +10,6 @@ W pliku Makefile sprawdzic czy wybrany zostal wlasciwy uklad mikroprocesora.
 Kompilowany program w jezyku C zapisac pod nazwa main.c
 Podlaczyc Launchpada.
 Kompilacja programu, zaladowanie do pamieci flash MSP-ka odbywa sie poprzez komende ./go
-Jezeli go.sh nie ma praw wykonywania to nalezy je dodac: chmod +x go.sh, podbnie dla program.exp, kompiluj.sh, debuguj.sh mspseriall.sh
+Jezeli go.sh nie ma praw wykonywania to nalezy je dodac: chmod +x go.sh, podobnie dla: program.exp, kompiluj.sh, debuguj.sh mspseriall.sh
 Plik wynikowy: a.out
 Opcjonalnie: Skrypt mspseriall.sh uruchamia lacze szeregowe z Launchpadem. 
