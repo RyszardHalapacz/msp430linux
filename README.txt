@@ -1,5 +1,5 @@
 Instrukcja do programowania Launchpada MSP430 pod Linuxem. J.Zygarlicki, 13-01-2020
-Testy przeprowadzono na Xubuntu 18.04.
+Testy przeprowadzono na Xubuntu 18.04 i LaunchPada MSP430G2553
 
 Przy pierwszym uruchomieniu nalezy doinstalowac w systemie linux:
 sudo apt-get install expect 
