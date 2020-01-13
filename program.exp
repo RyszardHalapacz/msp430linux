@@ -1,0 +1,48 @@
+#!/usr/bin/expect -f
+# The first line sets the 
+# path to the expect binaries
+
+# This sets a timeout of 10 secs
+# The script will terminate if there is no
+# interaction before it's reached
+set timeout 10 
+
+# This allows you to provide a path to a file
+# as an input argument
+set file [lindex $argv 0]
+
+# Check to see if an argument was provided
+if {[llength $argv] == 0} {
+  # If not, display usage instructions
+  send_user "Usage: scriptname \'file\'\n"
+  # and exit
+  exit 1
+}
+
+# This starts the process for the command `mspdebug`
+spawn mspdebug rf2500
+
+# Expect the prompt, mspdebug
+expect "(mspdebug)"
+
+# Send the erase command
+send "erase\r"
+
+# Wait for the prompt
+expect "(mspdebug)"
+
+# Send the program command and the path to the file
+send "prog $file\r"
+
+# Wait for the prompt 
+expect "(mspdebug)"
+
+# Exit from mspdebug
+send "exit\r"
+
+# Wait 1 second. This gives mspdebug a chance to start
+# the program that you've uploaded onto the board.
+sleep 1
+
+# We should now be done :) Exit expect.
+exit 0
