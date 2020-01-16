@@ -75,7 +75,7 @@ int main(void)
 
     P1OUT ^= 0x01;                          // Toggle P1.0 using exclusive-OR
 
-    i = 50000;                              // Delay
+    i = 10000;                              // Delay
     do (i--);
     while (i != 0);
   }

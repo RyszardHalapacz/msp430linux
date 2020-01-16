@@ -1,5 +1,5 @@
 CC=msp430-gcc 
-CFLAGS= -mmcu=msp430g2231
+CFLAGS= -mmcu=msp430g2553
 #g2231
 #g2553 
 
