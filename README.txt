@@ -9,3 +9,10 @@ Kompilacja programu, zaladowanie do pamieci flash MSP-ka odbywa sie poprzez kome
 Debugowanie programu poprzez: ./debug.sh
 Plik wynikowy: a.out
 Opcjonalnie: Skrypt mspseriall.sh uruchamia lacze szeregowe z Launchpadem. 
+
+Materialy do programowania:
+pdf z opisem ukladu
+pdf z opisem rodziny
+zip z ti.com z przykladami prostych programow
+graficzne narzedzie konfiguracyjne: ti.com/tool/GRACE
+
